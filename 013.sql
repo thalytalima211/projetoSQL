@@ -1,4 +1,0 @@
--- SQLite
--- Alterando coluna "PHONE" da tabela EMPLOYEES
-
-ALTER TABLE EMPLOYEES RENAME PHONE TO 'PHONE NUMBER';
