@@ -1,0 +1,6 @@
+-- SQLite
+-- Exibindo funcionários e seus respectivos cargos
+
+SELECT EMP.NAME AS NOME, POS.DESCRIPTION AS CARGO
+    FROM EMPLOYEES EMP
+    JOIN POSITIONS POS ON (EMP.POSITION_ID = POS.ID);

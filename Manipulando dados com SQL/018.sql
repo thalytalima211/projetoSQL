@@ -1,0 +1,8 @@
+-- SQLite
+-- Exibindo funcionários que realizaram 2 ou mais locações
+
+SELECT EMP.NAME AS NOME, COUNT(*) AS QUANTIDADE_DE_LOCACOES
+    FROM LOCATIONS LOC
+    JOIN EMPLOYEES EMP ON (LOC.EMPLOYEE_ID = EMP.ID)
+    GROUP BY LOC.EMPLOYEE_ID
+    HAVING COUNT(*) >= 2;
